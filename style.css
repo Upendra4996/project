@@ -1,0 +1,298 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-images:hover{
+    transform:scale(1.5);
+    transition:transform.2s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.banner-img:hover{
+    transform: scale(1.1);
+    border:10px solid transparent;
+    border-image: background-color: #21D4FD;
+    background-image:linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+  
+} 
+.banner-img{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.zoom:hover{
+    transform:scale(1.2);
+    transition:transform.2s;
+    border-radius: 7px;
+    cursor: pointer;
+    
+}
+
+.nav-bar{
+    display:flex;
+    justify-content: space-between;
+    background: rgb(211,7,56);
+    background: linear-gradient(258deg, rgba(211,7,56,1) 0%, rgba(182,6,234,1) 45%, rgba(0,212,255,1) 100%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.nav-bar-1{
+    display:flex;
+    padding:5px;
+    margin-right: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    text-shadow: 3px 2px 5px #ee99bed4;
+    
+}
+.nav-bar-2{
+    display:flex;
+    align-items: center;
+    column-gap: 20px;
+    padding:5px;
+    padding-right: 10px;
+    
+}
+.navbar-menu-toggle{
+    display: none;
+}
+.nav-bar-2 a{
+    text-decoration:none;
+    color:#f2f4f7;
+}
+.nav-bar-2 a:hover{
+    text-decoration:underline;
+    color:aqua;
+
+}
+.service-container-1{
+    padding:10px;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+.service-container-1 p{
+    color:white;
+}
+
+
+
+
+.side-nav{
+    background-color: darkblue;
+    width:250px;
+    height: 1000px;
+    position: fixed;
+    top:0;
+    left:-60%;
+    color:white;
+    transition: 2s;
+    
+
+}
+.side-link{
+    text-decoration: none;
+    color:white;
+    display:block;
+    padding-bottom: 20px;
+    padding-left:30px;
+
+    
+}
+.side-bar-2{
+    margin-top: 20px;
+
+   
+}
+.side-link:hover{
+    text-decoration: underline;
+    color:red;
+}
+
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.header-button{
+    border-radius: 5px;
+    margin:10px;
+    padding:10px;
+    background-color: black;
+    color: white;
+    margin-right: 50px;
+   
+}
+
+
+
+.service{
+    padding:20px;
+}
+.service{
+    inset: 8px;
+    background-color: transparent;
+}
+.service-container-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service-container-2{
+    padding: 20px;
+    display: flex;
+    gap:20px;
+}
+
+.service-container-2 div{
+    background-color: #f2f4f7;
+    border-radius:5px;
+    padding:10px;
+}
+
+
+.new-arrival-heading{
+    padding: 20px; 
+    margin:10px;  
+}
+
+.new-arrival{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.new-arrival-container{
+    position: relative;
+}
+.new-arrival button{
+    position: absolute;
+    top:50%;
+    left: 35%;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* .c-item{
+    width: 480px;
+} */
+.banner{
+    width: 1400px; height: 220px;
+}
+.c-img{
+    width: 1500px;
+     height: 600px;
+}
+.location{
+    display: flex;
+}
+.contact{
+    font-size: 40px;
+}
+
+
+@media screen and (max-width:600px){
+    .nav-bar-2{
+        display:none;
+    }
+    .navbar-menu-toggle{
+        display:block;
+    }
+    .header-image{
+        display: none;
+    }
+    .service-container-1{
+        display: none;
+    }
+    .service-container-2{
+        flex-direction: column;
+    }
+    .banner{
+        width: 310px; height: 140px;
+    }
+    .c-img{
+        width: 350px;
+        height: 200px;
+    }
+    .location{
+        display: block;
+    }
+    .contact{
+        font-size: 20px;
+    }
+    section{
+        
+        height: 100%!important;
+       
+    } 
+    .loc-link{
+        font-size: 12px;
+    }
+}
+
+
+.home{
+    border-bottom: 2px solid transparent;
+}
+.home:hover{
+    border-bottom: 2px solid red;
+}
+section{
+    width: 100%;
+    height: 40vh;
+    background-color: tomato;
+} 
+
+
+/*The grid: Four equal columns that floats next to each other
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+  
+  /* Style the images inside the grid
+  .column img {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container (positioning is needed to position the close button and the text) 
+  .container {
+    position: relative;
+    display: none;
+  }
+  
+  /* Expanding image text 
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the image 
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }*/
